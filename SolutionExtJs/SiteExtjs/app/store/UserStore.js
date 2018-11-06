@@ -13,3 +13,17 @@
 //     //     }
 //     // }
 // });
+
+//=============================================================
+
+
+Ext.define('SiteExtjs.store.UserStore', {
+    extend: 'Ext.data.Store',
+    requires  : ['SiteExtjs.model.User', 'Ext.data.proxy.LocalStorage'],
+    model: "SiteExtjs.model.User",
+
+    proxy: {
+        type: 'localstorage',
+        id  : 'Names'
+    }
+});
