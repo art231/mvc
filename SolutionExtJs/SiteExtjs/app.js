@@ -79,19 +79,48 @@
 
 
 //====================================================================
+// Ext.application({
+//     name: 'SiteExtjs',
 
+//     views: [
+//         'AddCarFormView',
+//         'CarCatalogView',
+//         'CarGridView',
+//         'SearchCarView'
+//     ],
+
+//     controllers : [
+//         'CarCatalogController'
+//     ],
+
+//     stores : [
+//         'CarCatalogStore'
+//     ],
+
+//     launch: function () {
+//         Ext.create('Ext.container.Viewport', {
+//             layout: 'fit',
+//             items: {
+//                 xtype  : 'carCatalogView'
+//             }
+//         });
+//     }
+// });
 Ext.application({
-    requires: ['Ext.container.Viewport'],
     name: 'SiteExtjs',
- 
-    appFolder: 'app',
-     
-    launch: function() {
+
+    views: [
+        'AddCarFormView',
+        'CarCatalogView',
+        'CarGridView',
+        'SearchCarView'
+    ],
+
+    launch: function () {
         Ext.create('Ext.container.Viewport', {
             layout: 'fit',
             items: {
-                xtype: 'panel',
-                html: '<h2>Библиотека</h2>'
+                xtype  : 'carCatalogView'
             }
         });
     }

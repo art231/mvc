@@ -7,7 +7,7 @@ var autoprefixer=require('gulp-autoprefixer');
 gulp.task('serve', function(){
 	browserSync.init({
 		server:{
-			baseDir:'/app/'
+			baseDir:'SiteExtjs'
 		}
 	});
 
