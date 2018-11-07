@@ -1,11 +1,23 @@
-// Ext.define('SiteExtjs.model.User', {
-//     extend: 'Ext.data.Model',
-//     fields: ['id','name', 'user', 'year']
-// });
+Ext.define('SiteExtjs.model.CarCatalogModel', {
+    extend: 'Ext.data.Model',
+    fields: ['name', 'price'],
+    proxy: {
+        type: 'rest',
+        api: {
+            create: 'car',
+            read: 'car',
+            destroy: 'car',
+            update: 'car'
+        },
+        reader: {
+            type: 'json',
+            root: 'data',
+            successProperty: 'success'
+        },
+        writer: {
+            type: 'json',
+            writeAllFields: true
+        }
 
-//===============================================================
-
-// Ext.define('SiteExtjs.model.User', {
-//     extend: 'Ext.data.Model',
-//     fields: ['id','name', 'author', 'year']
-// });
+    }
+});
