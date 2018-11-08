@@ -49,3 +49,44 @@
 //     // }
 
 // });
+//============================================================================
+
+Ext.define('SiteExtjs.controller.UserCatalogController', {
+    extend: 'Ext.app.Controller',
+    routes: {
+    	'user': 'onuser'
+    },
+    onuser: function(){
+    	console.log(this);
+    }
+    // init: function () {
+
+    //     this.control({
+
+    //     });
+    // }
+
+});
+//=====================================================================================
+// Ext.define('SiteExtjs.controller.UserCatalogController', {
+//         extend : 'Ext.app.Controller',
+ 		
+
+//         routes : {
+//             'user' : 'onUser'
+//         },
+ 
+//         onUser : function() {
+//         	console.log(this);
+//         }
+
+//         // listen : {
+//         //     controller : {
+//         //         '*' : {
+//         //             unmatchedroute : 'onUnmatchedRoute'
+//         //         }
+//         //     }
+//         // },
+ 
+//         // onUnmatchedRoute : function(hash) {}
+//     });

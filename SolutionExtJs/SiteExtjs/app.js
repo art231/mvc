@@ -6,9 +6,9 @@ Ext.application({
          'FieldUser'
     ],
 
-    // controllers : [
-    //     'UserCatalogController'
-    // ],
+    controllers : [
+        'UserCatalogController'
+    ],
 
     // stores : [
     //     'CarCatalogStore'
