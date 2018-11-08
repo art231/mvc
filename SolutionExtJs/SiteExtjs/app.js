@@ -2,25 +2,23 @@ Ext.application({
     name: 'SiteExtjs',
 
     views: [
-        'AddCarFormView',
-        'CarCatalogView',
-        'CarGridView',
-        'SearchCarView'
+        
+         'FieldUser'
     ],
 
-    controllers : [
-        'CarCatalogController'
-    ],
+    // controllers : [
+    //     'UserCatalogController'
+    // ],
 
-    stores : [
-        'CarCatalogStore'
-    ],
+    // stores : [
+    //     'CarCatalogStore'
+    // ],
 
     launch: function () {
         Ext.create('Ext.container.Viewport', {
             layout: 'fit',
             items: {
-                xtype  : 'carCatalogView'
+                xtype  : 'FieldUser'
             }
         });
     }
