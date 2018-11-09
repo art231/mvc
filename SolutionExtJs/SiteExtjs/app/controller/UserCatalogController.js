@@ -56,17 +56,36 @@ Ext.define('SiteExtjs.controller.UserCatalogController', {
     routes: {
     	'user': 'onuser'
     },
+    // views: [
+    //     'FieldUserCenterLayout'
+    // ],
     onuser: function(){
-    	console.log(this);
+    	// console.log(this);
+    	// this.control({
+     //    'FieldUserCenterLayout': {
+     //         beforerender: this.loadView//use the event you want
+     //     } 
+    //})
+    	var descAndSystem = new Ext.form.Panel ({
+    		//extend:'SiteExtjs.view.FieldUser',
+    		//alias: 'widget.FieldUserCenterLayout',
+    		renderTo: 'FieldUser',
+		    bodyPadding: 10,
+		    items: [
+		        {
+		            xtype: 'textfield',
+		            name: 'search',
+		            fieldLabel: 'Введите название модели',
+		            maxLength: 100
+		        }
+		    ]
+		});
+
+
     }
-    // init: function () {
-
-    //     this.control({
-
-    //     });
-    // }
 
 });
+
 //=====================================================================================
 // Ext.define('SiteExtjs.controller.UserCatalogController', {
 //         extend : 'Ext.app.Controller',

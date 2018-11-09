@@ -10,18 +10,25 @@ Ext.define('SiteExtjs.view.FieldUser', {
                 align: 'stretch'
             },
         items: [{
+                //xtype: 'panel',
                 xtype: 'panel',
-                //title: 'Первая панель',
-                flex:1
+                title: 'Поиск',
+                html:'<div id="FieldUser"></div>',
+                //region: 'west',
+                //width: 300,
+                collapsible: true,
+                collapsed: false,
+                flex: 1
             },{
                 xtype: 'panel',
-                //title: 'Вторая панель',
+                title: 'Вторая панель',
                 flex: 5
             },{
                 xtype: 'panel',
-                //title: 'Третья панель',
+                title: 'Третья панель',
                 flex: 1
-            }]
+            }],
+            //renderTo: Ext.getBody()
     
 
 });

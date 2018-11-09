@@ -3,7 +3,8 @@ Ext.application({
 
     views: [
         
-         'FieldUser'
+         'FieldUser',
+         'FieldUserCenterLayout'
     ],
 
     controllers : [
