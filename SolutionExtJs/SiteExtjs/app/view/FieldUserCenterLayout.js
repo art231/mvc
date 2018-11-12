@@ -1,16 +1,16 @@
-Ext.define('SiteExtjs.view.FieldUserCenterLayout', {
-    extend: 'Ext.form.Panel',
-    alias: 'widget.FieldUserCenterLayout',
-    bodyPadding: 10,
-    items: [
-        {
-            xtype: 'textfield',
-            name: 'search',
-            fieldLabel: 'Введите название модели',
-            maxLength: 200
-        }
-    ]
-});
+// Ext.define('SiteExtjs.view.FieldUserCenterLayout', {
+//     extend: 'Ext.form.Panel',
+//     alias: 'widget.FieldUserCenterLayout',
+//     bodyPadding: 10,
+//     items: [
+//         {
+//             xtype: 'textfield',
+//             name: 'search',
+//             fieldLabel: 'Введите название модели',
+//             maxLength: 200
+//         }
+//     ]
+// });
 //=============================================================================================================
 
 // Ext.define('CarCatalog.view.FieldUserCenterLayout', {
