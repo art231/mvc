@@ -2,7 +2,7 @@ Ext.define('SiteExtjs.view.loginForm', {
     extend: 'Ext.form.Panel',
 
 
-
+    
         labelWidth:100,
         alias: 'widget.loginForm',
         //url: 'api/values',     
