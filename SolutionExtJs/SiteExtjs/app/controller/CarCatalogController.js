@@ -7,8 +7,12 @@ Ext.define('SiteExtjs.controller.CarCatalogController', {
         });
     },
     routes : {
+<<<<<<< HEAD
         'user' : 'onUsers',
         'registration':'onRegistration'
+=======
+        'user' : 'onUsers'
+>>>>>>> master
     },
 
     onUsers : function() {
@@ -26,6 +30,7 @@ Ext.define('SiteExtjs.controller.CarCatalogController', {
         type: 'vbox',
         align: 'center',
         pack: 'center',
+<<<<<<< HEAD
         //anchor:'100%'
 
     },
@@ -33,6 +38,14 @@ Ext.define('SiteExtjs.controller.CarCatalogController', {
         // defaults: {
         //     anchor: '80%'
         // },
+=======
+        
+    },
+        //position:'absolute',
+        defaults: {
+            anchor: '80%'
+        },
+>>>>>>> master
         renderTo: 'content',
         items: [{
             xtype: 'textfield',
@@ -47,7 +60,11 @@ Ext.define('SiteExtjs.controller.CarCatalogController', {
             // }
            	//width: '100px'
             //allowBlank: false
+<<<<<<< HEAD
             //maxLength: 100
+=======
+            //maxLength: 100,
+>>>>>>> master
             //maxWidth: '300px'
             //labelWidth: 200
         }, {
@@ -81,9 +98,12 @@ Ext.define('SiteExtjs.controller.CarCatalogController', {
     });
 
 
+<<<<<<< HEAD
     },
     onRegistration : function() {
     	
+=======
+>>>>>>> master
     }
 
 
