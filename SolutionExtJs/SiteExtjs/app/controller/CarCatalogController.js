@@ -17,15 +17,14 @@ Ext.define('SiteExtjs.controller.CarCatalogController', {
 
 	  var formPanel=Ext.create('Ext.form.Panel',{
         title: 'Форма авторизации',
-        width: 400,
+        width: 300,
         height:200,
-        //region:'center',
+        region:'center',
         //layout: 'anchor',
         layout: {
         type: 'vbox',
         align: 'center',
-        pack: 'center',
-        
+        pack: 'center'
     },
         //position:'absolute',
         defaults: {
@@ -36,7 +35,7 @@ Ext.define('SiteExtjs.controller.CarCatalogController', {
             xtype: 'textfield',
             name: 'username',
             fieldLabel: 'Username',
-            //anchor:'100%'
+
             // anchor : '95%',
             // labelWidth : 150
             //width: '450px'
@@ -52,8 +51,7 @@ Ext.define('SiteExtjs.controller.CarCatalogController', {
             xtype: 'textfield',
             name: 'password',
             inputType: 'password',
-            fieldLabel: 'Password',
-            //anchor:'100%'
+            fieldLabel: 'Password'
             //width: 300
             //allowBlank: false
          }
