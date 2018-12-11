@@ -8,8 +8,12 @@ Ext.application({
     // // //     //'SearchCarView'
     //  ],
 
-    controllers : [
-        'CarCatalogController'
+    //name: 'SiteExtjs',
+
+    appFolder: 'app',
+
+    controllers: [
+        'loginFormController'
     ],
 
     // stores : [
@@ -17,7 +21,7 @@ Ext.application({
     // ],
 
     launch: function () {
-        
+         
 
     }
 });
